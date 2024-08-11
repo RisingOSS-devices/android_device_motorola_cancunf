@@ -8,6 +8,8 @@
 DEVICE_PATH := device/motorola/cancunf
 KERNEL_PATH := device/motorola/cancunf-kernel
 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_DUP_RULES := true
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
@@ -46,6 +48,10 @@ BOARD_KERNEL_PAGESIZE := 0x00001000
 BOARD_TAGS_OFFSET := 0x47c80000
 BOARD_RAMDISK_OFFSET := 0x66f00000
 BOARD_RAMDISK_USE_LZ4 := true
+TARGET_KERNEL_CLANG_VERSION := aosp-clang
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/$(TARGET_KERNEL_CLANG_VERSION)
+TARGET_KERNEL_ADDITIONAL_FLAGS := AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+KERNEL_LD := LD=ld.lld
 
 BOARD_KERNEL_CMDLINE += \
     bootopt=64S3,32N2,64N2 \
