@@ -1,10 +1,12 @@
 [
   {
+    "remote": "github",
     "repository"  : "RisingOSS-devices/vendor_motorola_cancunf",
     "target_path" : "vendor/motorola/cancunf",
     "branch": "fourteen"
   },
   {
+    "remote": "github",
     "repository"  : "RisingOSS-devices/cancunf_keys",
     "target_path" : "vendor/lineage-priv/keys",
     "branch": "fourteen"
@@ -22,7 +24,7 @@
     "branch": "lineage-21"
   },
   {
-    "remote": "github"
+    "remote": "github",
     "repository"  : "sarthakroy2002/device_motorola_cancunf-kernel",
     "target_path" : "device/motorola/cancunf-kernel",
     "branch": "fourteen"
