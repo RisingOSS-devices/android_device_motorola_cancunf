@@ -1,0 +1,38 @@
+[
+  {
+    "remote": "github",
+    "repository"  : "sarthakroy2002/vendor_motorola_cancunf",
+    "target_path" : "vendor/motorola/cancunf",
+    "branch": "fifteen"
+  },
+  {
+    "remote": "github",
+    "repository"  : "RisingOSS-devices/cancunf_keys",
+    "target_path" : "vendor/lineage-priv/keys",
+    "branch": "fourteen"
+  },
+  {
+    "remote": "github",
+    "repository"  : "yaap/hardware_mediatek",
+    "target_path" : "hardware/mediatek",
+    "branch": "fifteen"
+  },
+  {
+    "remote": "github",
+    "repository"  : "yaap/device_mediatek_sepolicy_vndr",
+    "target_path" : "device/mediatek/sepolicy_vndr",
+    "branch": "fifteen"
+  },
+  {
+    "remote": "github",
+    "repository"  : "sarthakroy2002/device_motorola_cancunf-kernel",
+    "target_path" : "device/motorola/cancunf-kernel",
+    "branch": "fifteen"
+  },
+  {
+    "remote": "gitlab",
+    "repository": "sarthakroy2002/vendor_motorola_cancunf-motcamera",
+    "target_path": "vendor/motorola/cancunf-motcamera",
+    "branch": "master"
+  }
+]
